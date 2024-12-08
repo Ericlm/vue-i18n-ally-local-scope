@@ -12,7 +12,10 @@ import TheWelcome from './components/TheWelcome.vue'
     </div>
 
     <!-- Global -->
-    <kbd>{{ $t('hello') }}</kbd>
+    <kbd>{{ $t('global') }}</kbd>
+
+    <!-- Local -->
+    <kbd>{{ $t('local') }}</kbd>
   </header>
 
   <main>
@@ -48,3 +51,9 @@ header {
   }
 }
 </style>
+
+<i18n lang="json">{
+  "en": {
+    "local": "Well, I'm on local scope"
+  }
+}</i18n>
